@@ -60,8 +60,8 @@ scrape_configs:
         - '{__name__=~"job:.*"}'
     static_configs:
       - targets:
-        - '180.71.58.10:9091'   # 하위 서버 1의 Prometheus
-        - '43.201.56.103:9090'   # 하위 서버 2의 Prometheus
+        - '180.71.58.**:9091'   # 하위 서버 1의 Prometheus
+        - '43.201.56.***:9090'   # 하위 서버 2의 Prometheus
 ```
 
 서브 Promethus & Node exporter 1 :  180.71.58.**
